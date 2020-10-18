@@ -30,7 +30,7 @@
 
 (require 'json)
 
-(defvar oblique-strategies-json-data-file (concat default-directory "sources/data.json")
+(defvar oblique-strategies-json-data-file (file-truename "sources/data.json")
   "Filepath with good oblique strategies.")
 
 (defvar oblique-strategies-map
