@@ -27,6 +27,8 @@ Clone and add the package to your `load-path`:
 M-x oblique-strategies
 ```
 
+(may) result in:
+
 ``` emacs-lisp
 Feats are fragile
 -----------------

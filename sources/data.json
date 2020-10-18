@@ -69,5 +69,144 @@
                    "All the work you cut is energy saved",
                    "Pure gain",
                    "Is is possible to just drop the task?",
-                   "Will your world explode? If not, you probably can drop it"]}
+                   "Will your world explode? If not, you probably can drop it"]},
+
+ {"id": 15,
+  "prompt": "Verify your fears, explicity",
+  "descriptions": ["Are you stuck becuse you're worried something will run too slow, and you don't know how to get around it?\nVerify that the case actually runs slow.\n\nIt might not",
+                   "Don't allow yourself to create a ridge of inflatable mountains"]},
+
+ {"id": 16,
+  "prompt": "Keep calm",
+  "descriptions": ["If your fears are real, don't panic",
+                   "Terrible problems often have simple solutions"]},
+
+ {"id": 17,
+  "prompt": "Take a closer look",
+  "descriptions": ["When was the last time you looked concretely at the abstract thing you are working with?",
+                   "Add more debugging output",
+                   "Gather more data"]},
+
+ {"id": 18,
+  "prompt": "Is it the bug you think it is?",
+  "descriptions": ["'Something else' that's broken can make something that works look broken",
+                   "'Something else' that's broken can make something broken more broken"]},
+
+ {"id": 19,
+  "prompt": "Is it a typo?",
+  "descriptions": ["The wrong variable name is otherwise working code can trigger a hunt far from where the problem is"]},
+
+ {"id": 20,
+  "prompt": "Stop and think",
+  "descriptions": ["Many problems need to be solved on paper first"]},
+
+ {"id": 21,
+  "prompt": "If you lack motivation",
+  "descriptions": ["Find the most interesting thing in the project, start on that"]},
+
+ {"id": 22,
+  "prompt": "Work append only",
+  "descriptions": ["Don't worry about mistakes",
+                   "Don't worry about revising",
+                   "Later on is when you can go back and edit",
+                   "Keep you focused on your destination"]},
+
+ {"id": 23,
+  "prompt": "Change your mind",
+  "descriptions": ["If something seems wrong, maybe it is"]},
+
+ {"id": 24,
+  "prompt": "Power through",
+  "descriptions": ["Building a staircase out of sugarcubes is draining"]},
+
+ {"id": 25,
+  "prompt": "Look for ways to chain tools",
+  "descriptions": ["Can I reuse any of my tools that I built?",
+                   "Can I combine them in novel ways to solve the problem?",
+                   "Sometimes a series of hacks can bootstrap a superior solution"]},
+
+ {"id": 26,
+  "prompt": "Backtrack",
+  "descriptions": ["Your assumption must be wrong",
+                   "Change your assumption",
+                   "Go up a level of abstraction and try a different approach"]},
+
+ {"id": 27,
+  "prompt": "Flip the problem around",
+  "descriptions": ["Look at it from a different perspective",
+                   "You cannot dig a hole in a different place by digging the same hole deeper. \n\n by Edward de Bono, who coined the term lateral thinking"]},
+
+ {"id": 28,
+  "prompt": "Work forward from where the unfinished part of the code suggests you should",
+  "descriptions": ["Just do it"]},
+
+ {"id": 29,
+  "prompt": "List dependencies to determine order of completion",
+  "descriptions": ["Order work by most likely to inform later work"]},
+
+ {"id": 30,
+  "prompt": "Escape the usage vacuum",
+  "descriptions": ["Don't go too long without witnessing an example of the feature you are implementing",
+                   "Examine the real-world use case and build to it"]},
+
+ {"id": 31,
+  "prompt": "Try the naive method first",
+  "descriptions": ["In general, it is faster to try all the easy methods in order of easiness",
+                   "Sometimes attempts on a problem push back for a reason"]},
+
+ {"id": 32,
+  "prompt": "Do it both ways",
+  "descriptions": ["Very often doing it both ways is faster than analyzing which is best",
+                   "Add a toggle if possible",
+                   "Some mistakes are cheaper to make than to avoid"]},
+
+ {"id": 33,
+  "prompt": "Verify that your assumptions about the outside world are correct",
+  "descriptions": ["Hallucinations aren't the problem, whatever is causing the hallucinations is",
+                   "See if you can trust what you're being told"]},
+
+ {"id": 34,
+  "prompt": "Get water flowing through the pipe",
+  "descriptions": ["Connect the system end-to-end, using dummy sections where necessary"]},
+
+ {"id": 35,
+  "prompt": "Every bug hunt is at worst a log time search through the code base",
+  "descriptions": ["Google the error message",
+                   "Tweak, google the new error"]},
+
+ {"id": 36,
+  "prompt": "Write down everything you know about the problem",
+  "descriptions": ["The terminal points of this process are questions to be answered"]},
+
+ {"id": 37,
+  "prompt": "Form hypothesis, test hypothesis, repeat",
+  "descriptions": ["This is the process you use when you are seemingly out of possibilities"]},
+
+ {"id": 38,
+  "prompt": "Have opinions",
+  "descriptions": ["It is generally better to guess wrong and check than to sit pondering what might be correct",
+                   "At any frontier intuition beats proof",
+                   "Opinion heralds fact"]},
+
+ {"id": 39,
+  "prompt": "Have goals and subdivide them",
+  "descriptions": ["Test-driven development is one implementation of this strategy"]},
+
+ {"id": 40,
+  "prompt": "Do it the wrong way",
+  "descriptions": ["If you have an idea, but know that it's wrong, build it the wrong way anyway",
+                   "Build it, then throw it out",
+                   "Truth will sooner come out of error than from confusion.\n\nFrancis Bacon, 1620."]},
+
+ {"id": 41,
+  "prompt": "Do something",
+  "descriptions": ["Work on the wrong thing",
+                   "Make something up",
+                   "Start even if you don't have all the information",
+                   "Inaction won't solve the problem"]},
+
+ {"id": 42,
+  "prompt": "Put the problem aside and work on something else",
+  "descriptions": ["Thrashing won't solve the problem"]}
+
 ]
