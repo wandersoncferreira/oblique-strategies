@@ -30,7 +30,11 @@
 
 (require 'json)
 
-(defvar oblique-strategies-json-data-file (expand-file-name "sources/data.json" (file-name-directory load-file-name))
+(defvar oblique-strategies-json-data-file (expand-file-name
+                                           "sources/data.json"
+                                           (if load-file-name
+                                               (file-name-directory load-file-name)
+                                             default-directory))
   "Filepath with good oblique strategies.")
 
 (defvar oblique-strategies-map
@@ -42,6 +46,9 @@
 
 (defvar oblique-strategies-buffer-name "*Oblique Strategy*"
   "Name of the buffer.")
+
+(defvar oblique-strategies-column-width 70
+  "Set a `fill-column' value to be used in the Oblique Strategy buffer.")
 
 (defun oblique-strategies-read-data ()
   "Read strategies from JSON data file."
@@ -59,17 +66,18 @@
   "Create the oblique buffer with PROMPT message and DESC message."
   (pop-to-buffer oblique-strategies-buffer-name)
   (let ((inhibit-read-only t)
-        (dashes-fn (lambda () (dotimes (_ (* (length prompt) 1.3)) (insert "-")))))
-    (setq-local fill-column 60)
+        (dashes-fn (lambda ()
+                     (dotimes (_ (* (length prompt) 1.3))
+                       (insert "-"))
+                     (insert "\n"))))
+    (setq-local fill-column oblique-strategies-column-width)
     (erase-buffer)
     (funcall dashes-fn)
-    (insert "\n")
     (insert (propertize prompt 'font-lock-face '(:weight bold :height 1.4)))
     (insert "\n")
     (funcall dashes-fn)
     (insert "\n")
-    (insert "\n")
-    (insert desc)
+    (insert (propertize desc 'font-lock-face '(:height 1.2)))
     (fill-paragraph)
     (special-mode)
     (use-local-map oblique-strategies-map)))
