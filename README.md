@@ -16,14 +16,14 @@ only some random event can really help you out in these moments.
 
 Clone and add the package to your `load-path`:
 
-``` shell
+``` emacs-lisp
 (add-to-list 'load-path "~/emacs.d/<your-pkg-dirs>/oblique-strategies")
 (require 'oblique-strategies)
 ```
 
 ## Usage
 
-``` elisp
+``` emacs-lisp
 M-x oblique-strategies
 ```
 
