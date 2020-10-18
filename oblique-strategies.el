@@ -1,11 +1,9 @@
-;;; oblique-strategies --- Oblique Strategies
+;;; oblique-strategies --- Oblique Strategies.
 
-;; Copyright (C)
-
-;; Author: Wanderson Ferreira <https://github.com/wandersoncferreira>
-;; Homepage: https://github.com/wandersoncferreira/oblique-strategies
-;; Package: oblique-strategies
+;; Author: Wanderson Ferreira
+;; Package-Requires: ((emacs "26.1"))
 ;; Version: 0.1
+;; Homepage: https://github.com/wandersoncferreira/oblique-strategies
 
 ;; This file is not part of GNU Emacs.
 
@@ -58,10 +56,6 @@
          (json (json-read-file oblique-strategies-json-data-file)))
     json))
 
-(defun oblique-strategies-random-elt (list)
-  "Get random element from LIST."
-  (nth (random (length list)) list))
-
 (defun oblique-strategies-create-buffer (prompt desc)
   "Create the oblique buffer with PROMPT message and DESC message."
   (pop-to-buffer oblique-strategies-buffer-name)
@@ -86,10 +80,11 @@
   "Got stuck? We might help!"
   (interactive)
   (let* ((data (oblique-strategies-read-data))
-         (entry (oblique-strategies-random-elt data))
+         (entry (seq-random-elt data))
          (prompt (gethash "prompt" entry))
-         (desc (oblique-strategies-random-elt (gethash "descriptions" entry))))
+         (desc (seq-random-elt (gethash "descriptions" entry))))
     (oblique-strategies-create-buffer prompt desc)))
 
 (provide 'oblique-strategies)
+
 ;;; oblique-strategies.el ends here
