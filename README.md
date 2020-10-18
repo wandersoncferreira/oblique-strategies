@@ -37,6 +37,9 @@ The trickier a solution is, the smaller the pool of people
 able to maintain it
 ```
 
+You can also press `n` to get the next strategy from the `*Oblique
+Strategy*` buffer.
+
 ## Credits
 
 Kevin Lawler for the nice [blog post](https://kevinlawler.com/prompts).

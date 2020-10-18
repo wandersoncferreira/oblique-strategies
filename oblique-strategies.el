@@ -3,11 +3,8 @@
 ;; Copyright (C)
 
 ;; Author: Wanderson Ferreira <https://github.com/wandersoncferreira>
-
 ;; Homepage: https://github.com/wandersoncferreira/oblique-strategies
-
 ;; Package: oblique-strategies
-
 ;; Version: 0.1
 
 ;; This file is not part of GNU Emacs.
@@ -36,6 +33,16 @@
 (defvar oblique-strategies-json-data-file "sources/data.json"
   "Filepath with good oblique strategies.")
 
+(defvar oblique-strategies-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map "n" 'oblique-strategies)
+    (define-key map "p" 'oblique-strategies)
+    (define-key map "q" 'quit-window)
+    map))
+
+(defvar oblique-strategies-buffer-name "*Oblique Strategy*"
+  "Name of the buffer.")
+
 (defun oblique-strategies-read-data ()
   "Read strategies from JSON data file."
   (let* ((json-object-type 'hash-table)
@@ -50,7 +57,7 @@
 
 (defun oblique-strategies-create-buffer (prompt desc)
   "Create the oblique buffer with PROMPT message and DESC message."
-  (pop-to-buffer "Oblique Strategy")
+  (pop-to-buffer oblique-strategies-buffer-name)
   (let ((inhibit-read-only t))
     (setq-local fill-column 60)
     (erase-buffer)
@@ -61,7 +68,8 @@
     (insert "\n\n")
     (insert desc)
     (fill-paragraph)
-    (special-mode)))
+    (special-mode)
+    (use-local-map oblique-strategies-map)))
 
 (defun oblique-strategies ()
   "Got stuck? We might help!"
