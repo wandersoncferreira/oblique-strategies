@@ -30,6 +30,7 @@ M-x oblique-strategies
 (may) result in:
 
 ``` emacs-lisp
+-----------------
 Feats are fragile
 -----------------
 
