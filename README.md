@@ -27,6 +27,13 @@ Clone and add the package to your `load-path`:
 M-x oblique-strategies
 ```
 
+``` emacs-lisp
+Feats are fragile
+-----------------
+
+The trickier a solution is, the smaller the pool of people
+able to maintain it
+```
 
 ## Credits
 
