@@ -3,17 +3,22 @@
   "descriptions": ["Can you short-circuit a complex problem?",
                    "Probably you could build a hacky Page Rank without knowing anything at all about linear algebra.",
                    "What kind of shortcuts did you look for when you were first learning to program?",
-                   "Hacks often become excellent long-term solutions."
+                   "Hacks often become excellent long-term solutions.",
+                   "Set for yourself an impossible task some weekend. Get as much of it done as you can solely by cutting corners",
+                   "A hack is an inexpensive attempt to keep momentum"
                   ]},
 
  {"id": 2,
   "prompt": "Look for a good enough approximation",
   "descriptions": ["Remove any inessential requirements you can find.",
+                   "Relax the problem wherever possible",
+                   "The world resists elegant solutions, in places",
                    "Don't shy away from informal solutions like hacks and approximations if the formal solution is heavy work."]},
 
  {"id": 3,
   "prompt": "Have faith in sound-looking abstractions",
   "descriptions": ["Novel combinations of known high-level strategies almost always work.",
+                   "Trust that you will be able to work out the details after fitting the parts together",
                    "There's no guarantee to the newcomer that using regexes won't lead to an inescapable problem, and yet, with a little mortar, regexes work great."]},
 
  {"id": 4,
@@ -24,6 +29,7 @@
  {"id": 5,
   "prompt": "Solve the problem directly",
   "descriptions": ["Pierce right to the center.",
+                   "If the problem reduces to a simple combination of known mathematical objects, then a direct mathematical approach may be the best way to solve it",
                    "Avoid theory building."]},
  {"id": 6,
   "prompt": "Feats are fragile",
